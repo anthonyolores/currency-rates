@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`From currency snapshot 1`] = `
+<input
+  onChange={[Function]}
+  placeholder="Currency"
+  type="text"
+  value=""
+/>
+`;

@@ -1,0 +1,72 @@
+
+$bd-radius:0px !important;
+$primary-color: #240040;
+%form-style{
+  padding: .375rem .75rem;
+  border-radius: $bd-radius;
+  border-width: 1px;
+  vertical-align: middle;
+  width:100%;
+  color:#6b00bc;
+  &:focus {
+    outline: none !important;
+    border:1px solid #6D00BF;
+    box-shadow: none;
+  }
+  &:disabled{
+    background:#eee8f3;
+    border: 1px solid #eee8f3 !important;
+  }
+}
+
+input, button, select, .list-group-item{
+  @extend %form-style;
+}
+input{
+  border:1px solid #e5e5e5;
+}
+.header-container{
+  padding: 20px 30px 10px !important;
+  background: $primary-color;
+  background: linear-gradient(90deg, rgba(36,0,64,1) 0%, rgb(66, 0, 117) 100%);
+  h1{
+    color:#fff;
+    font-size:1.5em;
+    margin-bottom: 0px;
+  }
+  p{
+    font-size:0.8em;
+    color:#f9f2ff;
+    opacity: 0.6;
+    margin-bottom: 5px;
+  }
+}
+.form-container{
+  background: #fff;
+  padding: 20px 30px !important;
+  box-shadow: 0 1px 3px rgba(25,25,25,.1);
+}
+.list-container{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-left: 0px;
+  // padding-right: 10px;
+  max-height: 261px;
+  overflow: auto;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+body{
+  margin-top:25px;
+  background:#eee;
+}
+
+@media only screen and (max-width:575px){
+  .container{
+    .row{
+      margin:0px !important;
+    }
+  }
+}
